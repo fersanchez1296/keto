@@ -1,3 +1,7 @@
+html{
+    min-width: 300px;
+}
+
 body{
     width: 100%;
     height: 100vh;
@@ -11,7 +15,7 @@ body{
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 96px;  /* Preferred icon size */
+    font-size: 24px;  /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -32,67 +36,132 @@ body{
     font-feature-settings: 'liga';
   }
 
-.building-container{
+.cards-container{
+    width: 90%;
+    margin: 100px auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px;
-    border: 5px dashed yellowgreen;
-    border-radius: 10px;
-  }
+}
 
-h1{
-    font-size: 72px;
-    color: darkorange;
-  }
+.cards-container .card{
+    min-width: 200px;
+    width: 200px;
+    height: 60%;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cards-container .card .card-image {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+}
+
+.cards-container .card .card-image img{
+    width: 120px;
+    height: 120px;
+}
+
+.cards-container .card .card-title{
+    text-align: center;
+    color: #708090;
+}
+
+.cards-container .card .card-description{
+    color: #545f69;
+    font-size: 13px;
+    text-align: center;
+}
 
 
+.cards-container .open-btn{
+    width: 100%;
+    height: 40px;
+    background-color: #0f6bc2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
 
-@media  screen and (max-width:1020px) {
-    h1{
-        font-size: 56px;
+.cards-container .open-btn:hover{
+    background-color: #1d81df;
+    cursor: pointer;
+}
+
+.cards-container .open-btn p{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media  screen and (max-width: 740px){
+    .cards-container .card{
+        margin-left: 10px;
     }
 }
 
-@media  screen and (max-width:850px) {
-    h1{
-        font-size: 42px;
+@media  screen and (max-width: 680px){
+    .cards-container{
+        flex-direction: column;
+        margin: auto;
+
     }
 
+    .cards-container .card{
+        width: 90%;
+        margin: 10px auto;
+    }
 }
 
-@media  screen and (max-width:700px) {
-    h1{
-        font-size: 24px;
+@media screen and (max-height: 400px){
+    .cards-container{
+        max-height: 350px;
+        margin: 10px auto;
+    }
+    
+    .cards-container .card{
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .cards-container .open-btn{
+        height: 200px;
+        width: 80px;
+    }
+
+    .cards-container .open-btn p{
+        width: 10px;
+        word-wrap: break-word;
         text-align: center;
+        font-size: 15px;
     }
 
-    .material-icons {
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 32px;  /* Preferred icon size */
-        display: inline-block;
-        line-height: 1;
-        text-transform: none;
-        letter-spacing: normal;
-        word-wrap: normal;
-        white-space: nowrap;
-        direction: ltr;
-      
-        /* Support for all WebKit browsers. */
-        -webkit-font-smoothing: antialiased;
-        /* Support for Safari and Chrome. */
-        text-rendering: optimizeLegibility;
-      
-        /* Support for Firefox. */
-        -moz-osx-font-smoothing: grayscale;
-      
-        /* Support for IE. */
-        font-feature-settings: 'liga';
-      }
+    .cards-container .open-btn p .material-icons{
+        font-size: 48px;
+    }
+
+    .cards-container .open-btn p .btn-text{
+        display: none;
+    }
+
 }
+
+
 
 
 
