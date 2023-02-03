@@ -219,18 +219,19 @@ section.viewport-container .slide .breakfast-container .breakfast .breakfast-ing
     
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
 
     section.viewport-container .slide .breakfast-container{
         width: 300px;
         height: 300px;
-        flex-direction: column;
+        
         gap: 10px;
-        margin-top: 400px ;
+        margin-top: 10px ;
     }
 
     section.viewport-container .slide .breakfast-container .breakfast{
         width: 300px;
+        height: 310px;
     }
 
     section.viewport-container .slide .breakfast-container .breakfast .breakfast-title{
@@ -243,6 +244,11 @@ section.viewport-container .slide .breakfast-container .breakfast .breakfast-ing
     
     section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients{
         width: 300px;
+    }
+
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients .breakfast-ingredients-container .breakfast-ingredients-name,
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients .breakfast-ingredients-container .breakfast-ingredients-quantity{
+    font-size: 14px;
     }
 }
 
