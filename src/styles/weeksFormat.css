@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #fff;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+nav.menu{
+    width: 100%;
+    height: 60px;
+    background-color: #1d1c1c;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.menu a{
+    text-decoration: none;
+}
+
+nav.menu .links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav.menu .links .logo{
+    width: 10%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.menu .links .principal{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav.menu .links .principal >  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    
+}
+
+nav.menu .links .principal > a div{
+    height: 60px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav.menu .links .principal > a div:hover,
+nav.menu .links .back-to-menu:hover{
+    background-color: #2a7ad4;
+    cursor: pointer;
+}
+
+nav.menu .links .principal > a div .icono{
+    display: none;
+}
+
+nav.menu .links .back-to-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 60px;
+}
+
+
+nav.menu .links .back-to-menu > a div{
+    width: 128px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.viewport-container{
+    height: calc(100vh - 60px);
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+section.viewport-container .slide{
+    min-width: 100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;   
+}
+
+section.viewport-container .slide .breakfast-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.viewport-container .slide .breakfast-container .breakfast{
+    background-color: #eee;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.viewport-container .slide .breakfast-container .breakfast .breakfast-title{
+    font-size: 25px;
+}
+
+section.viewport-container .slide .breakfast-container .breakfast .breakfast-subtitle{
+    font-size: 18px;
+}
+
+section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients{
+    width: 500px;
+}
+
+section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients .breakfast-ingredients-title{
+    margin-left: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients .breakfast-ingredients-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients .breakfast-ingredients-container .breakfast-ingredients-name,
+section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients .breakfast-ingredients-container .breakfast-ingredients-quantity
+{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1050px){
+    nav.menu .links .principal > a div .icono{
+        display: block;
+    }
+
+    nav.menu .links .principal > a div .meal-text{
+        display: none;
+    }
+
+
+    nav.menu .links .principal > a div{
+        width: 80px;
+    }
+
+    section.viewport-container .slide .breakfast-container{
+        width: 300px;
+        height: 300px;
+        gap: 10px;
+        margin-top: -5px;
+    }
+
+    section.viewport-container .slide .breakfast-container .breakfast{
+        width: 300px;
+    }
+
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-title{
+        font-size: 20px;
+    }
+    
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-subtitle{
+        font-size: 15px;
+    }
+    
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients{
+        width: 300px;
+    }
+
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    section.viewport-container .slide .breakfast-container{
+        width: 300px;
+        height: 300px;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 400px ;
+    }
+
+    section.viewport-container .slide .breakfast-container .breakfast{
+        width: 300px;
+    }
+
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-title{
+        font-size: 20px;
+    }
+    
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-subtitle{
+        font-size: 15px;
+    }
+    
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    section.viewport-container .slide .breakfast-container{
+        width: 300px;
+        height: calc(100vh + 60px);
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    section.viewport-container .slide .breakfast-container{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    section.viewport-container .slide .breakfast-container{
+        margin-top: 250px;
+    }
+}
+
+
