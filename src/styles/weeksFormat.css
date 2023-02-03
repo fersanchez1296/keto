@@ -224,7 +224,6 @@ section.viewport-container .slide .breakfast-container .breakfast .breakfast-ing
     section.viewport-container .slide .breakfast-container{
         width: 300px;
         height: 300px;
-        
         gap: 10px;
         margin-top: 10px ;
     }
@@ -252,6 +251,39 @@ section.viewport-container .slide .breakfast-container .breakfast .breakfast-ing
     }
 }
 
+@media screen and (max-width: 700px) {
+    section.viewport-container .slide .breakfast-container .breakfast{
+        width: 250px;
+        height: 310px;
+    }
+
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.viewport-container .slide .breakfast-container .breakfast{
+        width: 350px;
+        height: 330px;
+    }
+
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section.viewport-container .slide .breakfast-container .breakfast{
+        width: 350px;
+        height: 330px;
+    }
+
+    section.viewport-container .slide .breakfast-container .breakfast .breakfast-ingredients{
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 500px) {
 
     section.viewport-container .slide .breakfast-container{
@@ -259,7 +291,7 @@ section.viewport-container .slide .breakfast-container .breakfast .breakfast-ing
         height: calc(100vh + 60px);
         flex-direction: column;
         gap: 10px;
-        margin-top: 100px;
+        margin-top: 250px;
     }
 }
 
