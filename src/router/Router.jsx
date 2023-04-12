@@ -10,12 +10,12 @@ import { Calendar } from '../components/Calendar.jsx';
 
 export const Router = () => {
   return (
-    <HashRouter basename='/keto'>
+    <HashRouter>
           {/*Header y Nav*/}
             <Header/>
           {/*Main-Section*/}
           <Routes >
-            <Route path="/keto/inicio" element={<SectionMain/>}/>
+            <Route path="/" element={<SectionMain/>}/>
             <Route path="/Desayuno" element={<Breakfast/>}/>
             <Route path="/Comida" element={<Lunch/>} />
             <Route path="/Cena" element={<Dinner/>} />

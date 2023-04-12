@@ -6,9 +6,9 @@ import logo from '../assets/logo.png';
 export const Header = () => {
   return (
     <header className="header">
-            <div className="logo">
-                <img src={logo} />
-            </div>
+            <NavLink to="/" className="logo">
+                  <img src={logo} />
+            </NavLink>
             <nav className="nav">
                 <ul>
                         <NavLink to="/Desayuno"
