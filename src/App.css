@@ -1,0 +1,160 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.App{
+  display: grid;
+  grid-template-areas: "header header"
+                       "main   main";
+  grid-template-rows: 15vh 85vh;
+}
+
+.header{
+  grid-area: header;
+  background-color:  #dc143c;
+  display: flex;
+}
+
+.header .logo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.header .nav{
+  width: 80%;
+}
+
+.header .nav ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .nav ul a{
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.header .nav ul a li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav ul a li .show-menu-text{
+  display: none;
+}
+
+.header .nav ul a li .material-icons{
+  font-size: 2rem;
+}
+
+
+.header .nav ul a:hover{
+  background-color: #e7395c;
+}
+
+.main{
+  grid-area: main;
+}
+
+.link-active{
+  color: black !important;
+}
+
+.cards-container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cards-container .card{
+  width: 80%;
+  background-color: orange;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.cards-container .card .card-title{
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.cards-container .card .card-food-name{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  font-size: 0.6rem;
+  margin: 0.3rem 0;
+}
+
+.cards-container .card .card-food-name h3{
+  width: 50%;
+}
+
+.cards-container .card .card-content{
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px dashed white;
+}
+
+.cards-container .card .btn-see-instructions{
+  width: fit-content;
+  height: 2rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.cards-container .card .btn-see-instructions button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0.2rem;
+  outline: 0;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
