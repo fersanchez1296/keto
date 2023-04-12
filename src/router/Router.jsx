@@ -24,6 +24,7 @@ export const Router = () => {
           </Routes>
 
           {/*Main Section*/}
+          <SectionMain/>
     </HashRouter>
   )
 }
