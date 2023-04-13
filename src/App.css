@@ -107,11 +107,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: #eee;
 }
 
 .cards-container .card{
   width: 80%;
-  background-color: orange;
+  background-color: #28A381;
+  color: white;
   margin: 0 auto;
   font-size: 0.6rem;
   border-radius: 10px;
@@ -127,8 +129,28 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
-  font-size: 0.6rem;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
   margin: 0.3rem 0;
+}
+
+.cards-container .card .card-food-name .card-image{
+  width: 50%;
+  height: auto;
+  box-shadow: 0px 0px 7px #fff;
+  line-height: 50%;
+}
+
+.cards-container .card .card-food-name .card-image img{
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.cards-container .card .card-food-name .card-image img:hover{
+  transform: scale(1.08,1.08);
 }
 
 .cards-container .card .card-food-name h3{
@@ -156,5 +178,13 @@
   outline: 0;
   border-color: transparent;
   border-radius: 5px;
+  background-color: #72D0B6;
+  color: white;
+  font-weight: bold;
+}
+
+.cards-container .card .btn-see-instructions button:hover{
+  background-color: #D2F55E;
+  cursor: pointer;
 }
 

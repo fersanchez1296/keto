@@ -1,4 +1,6 @@
 import React from 'react'
+import bf1 from '../assets/foods/w1bf1.png';
+import bf2 from '../assets/foods/w1bf2.png';
 
 export const Breakfast = () => {
   return (
@@ -9,7 +11,7 @@ export const Breakfast = () => {
           <div className="card-food-name">
           <h3>Huevos con Salchichas y Espinacas</h3>
             <div className="card-image">
-              <img src="#" alt="" />
+              <img src={bf1} alt="Desayuno #1" />
             </div>
           </div>
         </div>
@@ -45,7 +47,7 @@ export const Breakfast = () => {
           <div className="card-food-name">
           <h3>Huevos con Salchichas y Espinacas</h3>
             <div className="card-image">
-              <img src="#" alt="" />
+              <img src={bf2} alt="Desayuno #2" />
             </div>
           </div>
         </div>
