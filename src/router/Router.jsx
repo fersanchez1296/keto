@@ -23,8 +23,7 @@ export const Router = () => {
             <Route path="/Calendar" element={<Calendar/>}   />
           </Routes>
 
-          {/*Main Section*/}
-          <SectionMain/>
+          
     </HashRouter>
   )
 }
